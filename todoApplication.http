@@ -16,11 +16,25 @@ Content-Type: application/json
 }
 ###
 
+PUT http://localhost:3000/todos/:5/
+Content-Type: application/json
+
+{ "status": "DONE"}
+
+###
+
+PUT http://localhost:3000/todos/:6/
+Content-Type: application/json 
+
+{
+  "priority": "HIGH"
+}
+
+###
 PUT http://localhost:3000/todos/:7/
 Content-Type: application/json
 
-{ "status": "DONE",  
-  "priority": "HIGH", 
+{
   "todo": "Complete assignment" 
 }
 ###
